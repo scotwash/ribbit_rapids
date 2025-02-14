@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmbn3gba0dnk6"
-path="res://.godot/imported/640x427-narwhal.jpg-8e37217afbb4be8f29c307a75c30b7fa.ctex"
+uid="uid://40coqtjkw70q"
+path="res://.godot/imported/back_frog.png-38c8217a3b809b270f962af0dc122fad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scripts/640x427-narwhal.jpg"
-dest_files=["res://.godot/imported/640x427-narwhal.jpg-8e37217afbb4be8f29c307a75c30b7fa.ctex"]
+source_file="res://sprites/frog_character sprites/back_frog.png"
+dest_files=["res://.godot/imported/back_frog.png-38c8217a3b809b270f962af0dc122fad.ctex"]
 
 [params]
 
