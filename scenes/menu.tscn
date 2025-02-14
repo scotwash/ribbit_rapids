@@ -1,13 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://ldl1moht4604"]
+[gd_scene load_steps=4 format=3 uid="uid://ldl1moht4604"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_5fvup"]
 [ext_resource type="AudioStream" uid="uid://c7kptndn5aey0" path="res://audio_files/Beast On The Battlefield  Royalty Free Fantasy RPG Music.mp3" id="2_jytbu"]
+[ext_resource type="Texture2D" uid="uid://cljnyyo6t5vqb" path="res://other art/Main_Menu_Art.png" id="3_hx5y2"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.0
+offset_right = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_5fvup")
@@ -41,6 +44,14 @@ text = "Quit"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_jytbu")
 autoplay = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2(250, 249)
+texture = ExtResource("3_hx5y2")
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
