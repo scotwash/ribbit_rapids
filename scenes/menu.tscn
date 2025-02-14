@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ldl1moht4604"]
+[gd_scene load_steps=3 format=3 uid="uid://ldl1moht4604"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_5fvup"]
+[ext_resource type="AudioStream" uid="uid://c7kptndn5aey0" path="res://audio_files/Beast On The Battlefield  Royalty Free Fantasy RPG Music.mp3" id="2_jytbu"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -36,6 +37,10 @@ text = "Credits"
 [node name="QuitButton" type="Button" parent="VBoxContainer"]
 layout_mode = 2
 text = "Quit"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_jytbu")
+autoplay = true
 
 [connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="VBoxContainer/CreditsButton" to="." method="_on_credits_button_pressed"]
