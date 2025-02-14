@@ -1,3 +1,30 @@
-[gd_scene format=3 uid="uid://c5c0yfw7x0yv8"]
+[gd_scene load_steps=3 format=3 uid="uid://c5c0yfw7x0yv8"]
+
+[ext_resource type="Texture2D" uid="uid://b1eg87sme5lec" path="res://other art/credits.png" id="1_jk1dj"]
+[ext_resource type="Script" path="res://scripts/back_mainmenu.gd" id="2_ies1a"]
 
 [node name="Credits" type="Node2D"]
+
+[node name="Credits" type="Sprite2D" parent="."]
+position = Vector2(247, 246)
+texture = ExtResource("1_jk1dj")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control"]
+layout_mode = 0
+offset_left = 381.0
+offset_top = 458.0
+offset_right = 495.0
+offset_bottom = 498.0
+
+[node name="back_mainmenu" type="Button" parent="Control/VBoxContainer"]
+layout_mode = 2
+text = "Back to Menu"
+script = ExtResource("2_ies1a")
+
+[connection signal="pressed" from="Control/VBoxContainer/back_mainmenu" to="Control/VBoxContainer/back_mainmenu" method="_on_pressed"]
