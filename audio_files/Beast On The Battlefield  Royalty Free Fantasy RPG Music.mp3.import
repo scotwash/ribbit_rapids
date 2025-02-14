@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7kptndn5aey0"
+path="res://.godot/imported/Beast On The Battlefield  Royalty Free Fantasy RPG Music.mp3-45d1cb83e32a73d14d98332f2b781c0d.mp3str"
+
+[deps]
+
+source_file="res://audio_files/Beast On The Battlefield  Royalty Free Fantasy RPG Music.mp3"
+dest_files=["res://.godot/imported/Beast On The Battlefield  Royalty Free Fantasy RPG Music.mp3-45d1cb83e32a73d14d98332f2b781c0d.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

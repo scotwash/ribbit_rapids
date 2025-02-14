@@ -6,7 +6,7 @@ func _on_start_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/main_screen.tscn")
 	pass # Replace with function body.
 
-# when this button is pressed it takes the player to the credits scene 
+# when this button is pressed it takes the player to the credits scened 
 func _on_credits_button_pressed():
 	get_tree().change_scene_to_file("res://scenes/credits.tscn")
 	pass
