@@ -1,40 +1,40 @@
 [gd_scene load_steps=15 format=3 uid="uid://b05im2gaforin"]
 
-[ext_resource type="Script" path="res://scripts/player_platformer.gd" id="1_a7grh"]
-[ext_resource type="Texture2D" uid="uid://jwvw6xod11pt" path="res://sprites/frog_character sprites/frog_character-removebg-preview - Copy (2).png" id="1_ojv00"]
-[ext_resource type="Texture2D" uid="uid://bx3epj7r3bskn" path="res://sprites/frog_character sprites/front_frog.png" id="3_i70ai"]
-[ext_resource type="Texture2D" uid="uid://dgv18msemmiln" path="res://sprites/frog_character sprites/left_frog.png" id="4_llfo0"]
+[ext_resource type="Script" path="res://scripts/player_platformer.gd" id="1_07nsx"]
+[ext_resource type="Texture2D" uid="uid://jwvw6xod11pt" path="res://sprites/frog_character sprites/frog_character-removebg-preview - Copy (2).png" id="2_cppdw"]
+[ext_resource type="Texture2D" uid="uid://bx3epj7r3bskn" path="res://sprites/frog_character sprites/front_frog.png" id="3_bxjdh"]
+[ext_resource type="Texture2D" uid="uid://dgv18msemmiln" path="res://sprites/frog_character sprites/left_frog.png" id="4_dwqmq"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ads3k"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(0, 0, 36, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3aw1j"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(39, 0, 36, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_aintq"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(78, 0, 36, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wektc"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(117, 0, 36, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_crtu7"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(78, 0, 36, 26)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rpb04"]
-atlas = ExtResource("3_i70ai")
+atlas = ExtResource("3_bxjdh")
 region = Rect2(0, 0, 39, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j0bei"]
-atlas = ExtResource("4_llfo0")
+atlas = ExtResource("4_dwqmq")
 region = Rect2(0, 0, 40, 28)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1r1a2"]
-atlas = ExtResource("1_ojv00")
+atlas = ExtResource("2_cppdw")
 region = Rect2(117, 0, 36, 26)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_c1fuw"]
@@ -92,7 +92,7 @@ animations = [{
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cyrx1"]
 
 [node name="player_topdown" type="CharacterBody2D"]
-script = ExtResource("1_a7grh")
+script = ExtResource("1_07nsx")
 
 [node name="sprites" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
