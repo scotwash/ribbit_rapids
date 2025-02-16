@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkm2n3sy2838o"
-valid=false
+uid="uid://dou7iwpwyvji8"
+path="res://.godot/imported/IMG_1012.png-62a284c2e73d6606138b78e1ca9cda12.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://tilesets/llilypad_water.png"
+source_file="res://tilesets/IMG_1012.png"
+dest_files=["res://.godot/imported/IMG_1012.png-62a284c2e73d6606138b78e1ca9cda12.ctex"]
 
 [params]
 

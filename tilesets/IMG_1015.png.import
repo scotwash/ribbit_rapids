@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqs8ewvlbcr6l"
-valid=false
+uid="uid://djuo5ypiwxll1"
+path="res://.godot/imported/IMG_1015.png-a40779dfd2746d61cf50441fe9ef0571.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://tilesets/water.png"
+source_file="res://tilesets/IMG_1015.png"
+dest_files=["res://.godot/imported/IMG_1015.png-a40779dfd2746d61cf50441fe9ef0571.ctex"]
 
 [params]
 
