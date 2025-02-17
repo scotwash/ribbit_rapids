@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dg23tns2wr11f"]
+
+[ext_resource type="Texture2D" uid="uid://b5xrewvr45atx" path="res://tilesets/grass3.png" id="1_x514c"]
+
+[node name="WormMonologue" type="Node2D"]
+
+[node name="Grass3" type="Sprite2D" parent="."]
+position = Vector2(282, 303)
+scale = Vector2(7.60638, 6.66667)
+texture = ExtResource("1_x514c")

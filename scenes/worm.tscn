@@ -1,0 +1,86 @@
+[gd_scene load_steps=13 format=3 uid="uid://c6g4j7dc84xwu"]
+
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_071df"]
+[ext_resource type="Texture2D" uid="uid://cvmmk7mg4t2vk" path="res://sprites/worm/worm_down_1.png" id="1_cm2g5"]
+[ext_resource type="Texture2D" uid="uid://donkgyktpw2gb" path="res://sprites/worm/worm_down_2.png" id="2_w1tqy"]
+[ext_resource type="Texture2D" uid="uid://bunu0px67wifj" path="res://sprites/worm/worm_left_1.png" id="3_y6x3q"]
+[ext_resource type="Texture2D" uid="uid://b0tc5cb4bni8j" path="res://sprites/worm/worm_left_2.png" id="4_nfh16"]
+[ext_resource type="Texture2D" uid="uid://d17eenrvs2w4v" path="res://sprites/worm/worm_right_1.png" id="5_rgmvq"]
+[ext_resource type="Texture2D" uid="uid://bm22vsre083b5" path="res://sprites/worm/worm_right_2.png" id="6_dm7k4"]
+[ext_resource type="Texture2D" uid="uid://progv7xj10t3" path="res://sprites/worm/worm_up_1.png" id="7_evvr2"]
+[ext_resource type="Texture2D" uid="uid://wdr581a5ju" path="res://sprites/worm/worm_up_2.png" id="8_q4ej4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ggo5l"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_cm2g5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_w1tqy")
+}],
+"loop": true,
+"name": &"w_down_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_y6x3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nfh16")
+}],
+"loop": true,
+"name": &"w_left_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_rgmvq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_dm7k4")
+}],
+"loop": true,
+"name": &"w_right_idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_evvr2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_q4ej4")
+}],
+"loop": true,
+"name": &"w_up_idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bv15s"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mib8x"]
+radius = 3.15281
+
+[node name="worm" type="CharacterBody2D"]
+script = ExtResource("1_071df")
+
+[node name="w_sprites" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_ggo5l")
+animation = &"w_up_idle"
+
+[node name="hit_box" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hit_box"]
+scale = Vector2(2.27574, 2.18159)
+shape = SubResource("CircleShape2D_bv15s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.619021, 0.824788)
+shape = SubResource("CircleShape2D_mib8x")
+
+[connection signal="body_entered" from="hit_box" to="." method="_on_hit_box_body_entered"]
+[connection signal="body_exited" from="hit_box" to="." method="_on_hit_box_body_exited"]
