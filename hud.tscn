@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://bvw5k881cj5kf"]
-
-[node name="Node2D" type="Control"]
-layout_mode = 3
-anchors_preset = 0
-scale = Vector2(3.9568, 7.65273)

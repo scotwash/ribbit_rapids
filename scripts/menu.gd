@@ -3,7 +3,7 @@ extends Control
 
 # starts game, leads to main map 
 func _on_start_button_pressed():
-	get_tree().change_scene_to_file("res://scenes/game_levels/test.tscn")
+	get_tree().change_scene_to_file("res://scenes/game_levels/world.tscn")
 	pass # Replace with function body.
 
 # when this button is pressed it takes the player to the credits scened 

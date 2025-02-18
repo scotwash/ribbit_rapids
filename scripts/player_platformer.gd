@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const speed = 180
+const speed = 135
 var current_dir = "none"
 
 
