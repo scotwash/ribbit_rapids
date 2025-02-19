@@ -1,0 +1,182 @@
+[gd_scene load_steps=11 format=4 uid="uid://b1efm6vp1t4mt"]
+
+[ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="1_nt6lp"]
+[ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://other art/pipes/BigStraightPipe_Horizontal.png" id="2_crdjk"]
+[ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/pipes/BigCurvedPipe_BottomRight.png" id="3_d6s67"]
+[ext_resource type="Script" path="res://scripts/rotate.gd" id="4_nsphr"]
+[ext_resource type="Script" path="res://scripts/rotate_2.gd" id="5_l2fpt"]
+[ext_resource type="Script" path="res://scripts/rotate_3.gd" id="6_5xq68"]
+[ext_resource type="Script" path="res://scripts/rotate_4.gd" id="7_51544"]
+[ext_resource type="Script" path="res://scripts/rotate_5.gd" id="8_lh12c"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4s8d7"]
+texture = ExtResource("1_nt6lp")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+5:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_8eab4"]
+sources/0 = SubResource("TileSetAtlasSource_4s8d7")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+position = Vector2(220, 204)
+scale = Vector2(3.44058, 3.11093)
+tile_map_data = PackedByteArray("AAD8//z/AAACAAIAAAD8//3/AAACAAMAAAD8//7/AAACAAQAAAD8////AAACAAIAAAD9//z/AAADAAIAAAD9//3/AAADAAMAAAD9//7/AAADAAQAAAD9////AAADAAIAAAD+//z/AAAEAAIAAAD+//3/AAAEAAMAAAD+//7/AAAEAAQAAAD+////AAAEAAIAAAD///z/AAAFAAIAAAD///3/AAAFAAMAAAD///7/AAAFAAQAAAD/////AAAFAAIAAAAAAAAAAAACAAIAAAAAAAEAAAACAAMAAAAAAAIAAAACAAQAAAAAAAMAAAACAAUAAAABAAAAAAACAAEAAAABAAEAAAACAAEAAAABAAIAAAACAAEAAAABAAMAAAACAAEAAAACAAAAAAADAAEAAAACAAEAAAADAAEAAAACAAIAAAADAAEAAAACAAMAAAADAAEAAAADAAAAAAAEAAEAAAADAAEAAAAEAAEAAAADAAIAAAAEAAEAAAADAAMAAAAEAAEAAAD8/wAAAAACAAMAAAD8/wEAAAACAAQAAAD8/wIAAAACAAUAAAD9/wAAAAADAAMAAAD9/wEAAAADAAQAAAD9/wIAAAADAAUAAAD+/wAAAAAEAAMAAAD+/wEAAAAEAAQAAAD+/wIAAAAEAAUAAAD//wAAAAAFAAMAAAD//wEAAAAFAAQAAAD//wIAAAAFAAUAAAAAAPz/AAACAAIAAAAAAP3/AAACAAMAAAAAAP7/AAACAAQAAAAAAP//AAACAAUAAAABAPz/AAACAAEAAAABAP3/AAACAAEAAAABAP7/AAACAAEAAAABAP//AAACAAEAAAACAPz/AAADAAEAAAACAP3/AAADAAEAAAACAP7/AAADAAEAAAACAP//AAADAAEAAAADAPz/AAAEAAEAAAADAP3/AAAEAAEAAAADAP7/AAAEAAEAAAADAP//AAAEAAEAAAABAAUAAAAFAAEAAAACAAUAAAADAAEAAAADAAUAAAAEAAEAAAAEAAUAAAAFAAEAAAABAAQAAAAFAAEAAAACAAQAAAADAAEAAAADAAQAAAAEAAEAAAAEAAQAAAAFAAEAAAD8/wQAAAACAAEAAAD9/wQAAAADAAEAAAD+/wQAAAACAAEAAAD//wQAAAADAAEAAAAAAAQAAAAEAAEAAAD+/wUAAAAEAAEAAAD//wUAAAAFAAEAAAAAAAUAAAAEAAEAAAD8/wUAAAACAAEAAAD9/wUAAAADAAEAAAD8/wMAAAACAAEAAAD9/wMAAAADAAEAAAD+/wMAAAAEAAEAAAD//wMAAAAFAAEAAAAEAPz/AAAFAAEAAAAEAP3/AAAFAAEAAAAEAP7/AAAFAAEAAAAEAP//AAAFAAEAAAAEAAAAAAAFAAEAAAAEAAEAAAAFAAEAAAAEAAIAAAAFAAEAAAAEAAMAAAAFAAEAAAA=")
+tile_set = SubResource("TileSet_8eab4")
+
+[node name="1" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-56.3859, -36.9664)
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="2" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-40.1096, -36.9664)
+scale = Vector2(0.215238, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="3" type="Sprite2D" parent="TileMapLayer"]
+unique_name_in_owner = true
+position = Vector2(-26.4491, -40.8237)
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="4" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-25.8678, -24.7514)
+rotation = 1.5708
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="5" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-25.5771, -8.67907)
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="6" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-25.5771, 9.00051)
+rotation = -1.59275
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="7" type="Sprite2D" parent="TileMapLayer"]
+unique_name_in_owner = true
+position = Vector2(-9.88207, 6.42893)
+rotation = 0.00702
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="8" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(-9.30076, -11.2506)
+rotation = 0.00702
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="9" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(9.01011, -11.2506)
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="10" type="Sprite2D" parent="TileMapLayer"]
+unique_name_in_owner = true
+position = Vector2(26.449, -10.9292)
+rotation = 3.12912
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="11" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(23.5426, 6.42894)
+rotation = 1.5708
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="12" type="Sprite2D" parent="TileMapLayer"]
+unique_name_in_owner = true
+position = Vector2(23.8332, 23.4656)
+rotation = 3.12912
+scale = Vector2(0.262675, 0.255982)
+texture = ExtResource("3_d6s67")
+
+[node name="13" type="Sprite2D" parent="TileMapLayer"]
+position = Vector2(40.4002, 22.5013)
+scale = Vector2(0.205738, 0.321447)
+texture = ExtResource("2_crdjk")
+
+[node name="Rotate" type="Button" parent="."]
+offset_left = 115.0
+offset_top = 66.0
+offset_right = 123.0
+offset_bottom = 74.0
+scale = Vector2(5.28708, 4.74509)
+script = ExtResource("4_nsphr")
+
+[node name="Rotate2" type="Button" parent="."]
+offset_left = 101.0
+offset_top = 146.0
+offset_right = 109.0
+offset_bottom = 154.0
+scale = Vector2(7.51018, 7.73213)
+script = ExtResource("5_l2fpt")
+
+[node name="Rotate3" type="Button" parent="."]
+offset_left = 171.0
+offset_top = 215.0
+offset_right = 179.0
+offset_bottom = 223.0
+scale = Vector2(5.62191, 4.74017)
+script = ExtResource("6_5xq68")
+
+[node name="Rotate4" type="Button" parent="."]
+offset_left = 274.0
+offset_top = 140.0
+offset_right = 282.0
+offset_bottom = 148.0
+scale = Vector2(7.20486, 5.62325)
+script = ExtResource("7_51544")
+
+[node name="Rotate5" type="Button" parent="."]
+offset_left = 270.0
+offset_top = 246.0
+offset_right = 278.0
+offset_bottom = 254.0
+scale = Vector2(6.53167, 6.00829)
+script = ExtResource("8_lh12c")
+
+[connection signal="pressed" from="Rotate" to="Rotate" method="_on_pressed"]
+[connection signal="pressed" from="Rotate2" to="Rotate2" method="_on_pressed"]
+[connection signal="pressed" from="Rotate3" to="Rotate3" method="_on_pressed"]
+[connection signal="pressed" from="Rotate4" to="Rotate4" method="_on_pressed"]
+[connection signal="pressed" from="Rotate5" to="Rotate5" method="_on_pressed"]
