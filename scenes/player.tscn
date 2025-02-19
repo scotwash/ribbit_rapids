@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=3 uid="uid://b05im2gaforin"]
 
-[ext_resource type="Script" path="res://scripts/player_platformer.gd" id="1_07nsx"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_07nsx"]
 [ext_resource type="Texture2D" uid="uid://jwvw6xod11pt" path="res://sprites/frog_character sprites/frog_character-removebg-preview - Copy (2).png" id="2_cppdw"]
 [ext_resource type="Texture2D" uid="uid://bx3epj7r3bskn" path="res://sprites/frog_character sprites/front_frog.png" id="3_bxjdh"]
 [ext_resource type="Texture2D" uid="uid://dgv18msemmiln" path="res://sprites/frog_character sprites/left_frog.png" id="4_dwqmq"]

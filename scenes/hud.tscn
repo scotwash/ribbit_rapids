@@ -24,6 +24,7 @@ offset_bottom = 38.0
 icon = ExtResource("2_em32s")
 
 [node name="Load" type="Button" parent="."]
+layout_mode = 0
 offset_left = 426.0
 offset_top = -2.0
 offset_right = 497.0
@@ -31,6 +32,7 @@ offset_bottom = 37.0
 icon = ExtResource("3_43qs4")
 
 [node name="Menu" type="Button" parent="."]
+layout_mode = 0
 offset_left = 233.0
 offset_top = -2.0
 offset_right = 304.0
@@ -38,6 +40,7 @@ offset_bottom = 37.0
 icon = ExtResource("4_whl3c")
 
 [node name="Exit" type="Button" parent="."]
+layout_mode = 0
 offset_left = 136.0
 offset_right = 207.0
 offset_bottom = 39.0
