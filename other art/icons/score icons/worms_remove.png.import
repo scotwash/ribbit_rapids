@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cdgakuc5h7o4y"
-path="res://.godot/imported/BigCurvedPipe_BottomLeft.png-0d909f2f92c3a15de82a6892ce5a2bb7.ctex"
+uid="uid://2dowmwga3ru1"
+path="res://.godot/imported/worms_remove.png-9dd41113fa6562fecdc788637d350d08.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://other art/pipes/BigCurvedPipe_BottomLeft.png"
-dest_files=["res://.godot/imported/BigCurvedPipe_BottomLeft.png-0d909f2f92c3a15de82a6892ce5a2bb7.ctex"]
+source_file="res://other art/icons/score icons/worms_remove.png"
+dest_files=["res://.godot/imported/worms_remove.png-9dd41113fa6562fecdc788637d350d08.ctex"]
 
 [params]
 

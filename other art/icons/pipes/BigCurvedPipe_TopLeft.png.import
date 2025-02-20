@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpxe55ybdt24h"
-path="res://.godot/imported/BigCurvedPipe_TopRight.png-7483d7d0fa0918ca4c9fe543231dfab9.ctex"
+uid="uid://dtedihdfugol4"
+path="res://.godot/imported/BigCurvedPipe_TopLeft.png-d201b037d29d646feedcce22a53d29dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://other art/pipes/BigCurvedPipe_TopRight.png"
-dest_files=["res://.godot/imported/BigCurvedPipe_TopRight.png-7483d7d0fa0918ca4c9fe543231dfab9.ctex"]
+source_file="res://other art/icons/pipes/BigCurvedPipe_TopLeft.png"
+dest_files=["res://.godot/imported/BigCurvedPipe_TopLeft.png-d201b037d29d646feedcce22a53d29dc.ctex"]
 
 [params]
 

@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3 uid="uid://bowjkmxxngw0t"]
+
+[ext_resource type="Script" path="res://scripts/world_select.gd" id="1_qij5h"]
+[ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="1_yhwlu"]
+[ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="2_natnn"]
+
+[node name="worldl_Select" type="Control"]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 223.0
+offset_top = 241.0
+offset_right = 223.0
+offset_bottom = 241.0
+script = ExtResource("1_qij5h")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Next" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_yhwlu")
+text = "Level Select"
+
+[node name="World" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_yhwlu")
+text = "World"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(42.5, -36)
+scale = Vector2(3.66, 0.904762)
+texture = ExtResource("2_natnn")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = -4.5
+offset_top = -48.0
+offset_right = 169.5
+offset_bottom = -8.0
+theme_override_fonts/normal_font = ExtResource("1_yhwlu")
+theme_override_font_sizes/normal_font_size = 28
+text = "You Win!"
+
+[connection signal="pressed" from="VBoxContainer/Next" to="." method="_on_next_pressed"]
+[connection signal="pressed" from="VBoxContainer/World" to="." method="_on_world_pressed"]

@@ -1,13 +1,17 @@
-[gd_scene load_steps=8 format=4 uid="uid://b1efm6vp1t4mt"]
+[gd_scene load_steps=12 format=4 uid="uid://b1efm6vp1t4mt"]
 
-[ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="1_nt6lp"]
-[ext_resource type="Script" path="res://scripts/base_puzzle.gd" id="1_xdgee"]
-[ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://other art/pipes/BigStraightPipe_Horizontal.png" id="2_crdjk"]
-[ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/pipes/BigCurvedPipe_BottomRight.png" id="3_d6s67"]
-[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="5_jrxvn"]
+[ext_resource type="Script" path="res://scripts/base_puzzle.gd" id="1_kdjqr"]
+[ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="2_hpurg"]
+[ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://other art/icons/pipes/BigStraightPipe_Horizontal.png" id="3_1cndh"]
+[ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/icons/pipes/BigCurvedPipe_BottomRight.png" id="4_txrqq"]
+[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="5_sqhb0"]
+[ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="6_58aar"]
+[ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://other art/icons/score icons/4WayPipe.png" id="7_3kwj2"]
+[ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="8_wsrtx"]
+[ext_resource type="Texture2D" uid="uid://b7pcrvhnunw3o" path="res://other art/icons/level icons/level1.png" id="9_6j60k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4s8d7"]
-texture = ExtResource("1_nt6lp")
+texture = ExtResource("2_hpurg")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -49,92 +53,92 @@ texture = ExtResource("1_nt6lp")
 sources/0 = SubResource("TileSetAtlasSource_4s8d7")
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource("1_xdgee")
+script = ExtResource("1_kdjqr")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(220, 204)
-scale = Vector2(3.44058, 3.11093)
+scale = Vector2(3.60202, 3.32988)
 tile_map_data = PackedByteArray("AAD8//z/AAACAAIAAAD8//3/AAACAAMAAAD8//7/AAACAAQAAAD8////AAACAAIAAAD9//z/AAADAAIAAAD9//3/AAADAAMAAAD9//7/AAADAAQAAAD9////AAADAAIAAAD+//z/AAAEAAIAAAD+//3/AAAEAAMAAAD+//7/AAAEAAQAAAD+////AAAEAAIAAAD///z/AAAFAAIAAAD///3/AAAFAAMAAAD///7/AAAFAAQAAAD/////AAAFAAIAAAAAAAAAAAACAAIAAAAAAAEAAAACAAMAAAAAAAIAAAACAAQAAAAAAAMAAAACAAUAAAABAAAAAAACAAEAAAABAAEAAAACAAEAAAABAAIAAAACAAEAAAABAAMAAAACAAEAAAACAAAAAAADAAEAAAACAAEAAAADAAEAAAACAAIAAAADAAEAAAACAAMAAAADAAEAAAADAAAAAAAEAAEAAAADAAEAAAAEAAEAAAADAAIAAAAEAAEAAAADAAMAAAAEAAEAAAD8/wAAAAACAAMAAAD8/wEAAAACAAQAAAD8/wIAAAACAAUAAAD9/wAAAAADAAMAAAD9/wEAAAADAAQAAAD9/wIAAAADAAUAAAD+/wAAAAAEAAMAAAD+/wEAAAAEAAQAAAD+/wIAAAAEAAUAAAD//wAAAAAFAAMAAAD//wEAAAAFAAQAAAD//wIAAAAFAAUAAAAAAPz/AAACAAIAAAAAAP3/AAACAAMAAAAAAP7/AAACAAQAAAAAAP//AAACAAUAAAABAPz/AAACAAEAAAABAP3/AAACAAEAAAABAP7/AAACAAEAAAABAP//AAACAAEAAAACAPz/AAADAAEAAAACAP3/AAADAAEAAAACAP7/AAADAAEAAAACAP//AAADAAEAAAADAPz/AAAEAAEAAAADAP3/AAAEAAEAAAADAP7/AAAEAAEAAAADAP//AAAEAAEAAAABAAUAAAAFAAEAAAACAAUAAAADAAEAAAADAAUAAAAEAAEAAAAEAAUAAAAFAAEAAAABAAQAAAAFAAEAAAACAAQAAAADAAEAAAADAAQAAAAEAAEAAAAEAAQAAAAFAAEAAAD8/wQAAAACAAEAAAD9/wQAAAADAAEAAAD+/wQAAAACAAEAAAD//wQAAAADAAEAAAAAAAQAAAAEAAEAAAD+/wUAAAAEAAEAAAD//wUAAAAFAAEAAAAAAAUAAAAEAAEAAAD8/wUAAAACAAEAAAD9/wUAAAADAAEAAAD8/wMAAAACAAEAAAD9/wMAAAADAAEAAAD+/wMAAAAEAAEAAAD//wMAAAAFAAEAAAAEAPz/AAAFAAEAAAAEAP3/AAAFAAEAAAAEAP7/AAAFAAEAAAAEAP//AAAFAAEAAAAEAAAAAAAFAAEAAAAEAAEAAAAFAAEAAAAEAAIAAAAFAAEAAAAEAAMAAAAFAAEAAAA=")
 tile_set = SubResource("TileSet_8eab4")
 
 [node name="1" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(-56.3859, -36.9664)
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="2" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(-40.1096, -36.9664)
 scale = Vector2(0.215238, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="3" type="Sprite2D" parent="TileMapLayer"]
 unique_name_in_owner = true
 position = Vector2(-26.4491, -40.8237)
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="4" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(-25.8678, -24.7514)
 rotation = 1.5708
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="5" type="Sprite2D" parent="TileMapLayer"]
 unique_name_in_owner = true
 position = Vector2(-25.5771, -8.67907)
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="6" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(-25.5771, 9.00051)
 rotation = -1.59275
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="7" type="Sprite2D" parent="TileMapLayer"]
 unique_name_in_owner = true
 position = Vector2(-9.88207, 6.42893)
 rotation = 0.00702
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="8" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(-9.30076, -11.2506)
 rotation = 0.00702
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="9" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(9.01011, -11.2506)
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="10" type="Sprite2D" parent="TileMapLayer"]
 unique_name_in_owner = true
 position = Vector2(26.449, -10.9292)
 rotation = 3.12912
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="11" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(23.5426, 6.42894)
 rotation = 1.5708
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
 [node name="12" type="Sprite2D" parent="TileMapLayer"]
 unique_name_in_owner = true
 position = Vector2(23.8332, 23.4656)
 rotation = 3.12912
 scale = Vector2(0.262675, 0.255982)
-texture = ExtResource("3_d6s67")
+texture = ExtResource("4_txrqq")
 
 [node name="13" type="Sprite2D" parent="TileMapLayer"]
 position = Vector2(40.4002, 22.5013)
 scale = Vector2(0.205738, 0.321447)
-texture = ExtResource("2_crdjk")
+texture = ExtResource("3_1cndh")
 
-[node name="hud" parent="TileMapLayer" instance=ExtResource("5_jrxvn")]
+[node name="hud" parent="TileMapLayer" instance=ExtResource("5_sqhb0")]
 offset_left = -87.4853
 offset_top = 72.0041
 offset_right = -87.4853
@@ -176,6 +180,41 @@ offset_right = 278.0
 offset_bottom = 254.0
 scale = Vector2(6.53167, 6.00829)
 
+[node name="pipe_score" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -117.0
+offset_top = -70.0
+offset_right = -77.0
+offset_bottom = -30.0
+
+[node name="Sprite2D2" type="Sprite2D" parent="pipe_score"]
+position = Vector2(590, 88)
+scale = Vector2(1, 0.64)
+texture = ExtResource("6_58aar")
+
+[node name="Sprite2D" type="Sprite2D" parent="pipe_score"]
+visibility_layer = 2
+position = Vector2(579, 89)
+texture = ExtResource("7_3kwj2")
+
+[node name="pipe_score_text" type="RichTextLabel" parent="pipe_score"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 601.0
+offset_top = 81.0
+offset_right = 641.0
+offset_bottom = 121.0
+theme_override_colors/font_outline_color = Color(0.153695, 0.603571, 0.627999, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.52549, 0, 1)
+theme_override_fonts/normal_font = ExtResource("8_wsrtx")
+text = "0"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(34, 32)
+texture = ExtResource("9_6j60k")
+
+[connection signal="hidden" from="Rotate" to="." method="_on_rotate_hidden"]
 [connection signal="pressed" from="Rotate" to="." method="_on_rotate_pressed"]
 [connection signal="pressed" from="Rotate2" to="." method="_on_rotate_2_pressed"]
 [connection signal="pressed" from="Rotate3" to="." method="_on_rotate_3_pressed"]

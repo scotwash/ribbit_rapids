@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2dowmwga3ru1"
-path="res://.godot/imported/worms_remove.png-5289454220b9d5e263efd330f3f23383.ctex"
+uid="uid://m1rk7fgqrh1v"
+path="res://.godot/imported/BigStraightPipe_Horizontal.png-ba31eafc45a3c3634fbed2e181acc36b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://other art/icons/worms_remove.png"
-dest_files=["res://.godot/imported/worms_remove.png-5289454220b9d5e263efd330f3f23383.ctex"]
+source_file="res://other art/icons/pipes/BigStraightPipe_Horizontal.png"
+dest_files=["res://.godot/imported/BigStraightPipe_Horizontal.png-ba31eafc45a3c3634fbed2e181acc36b.ctex"]
 
 [params]
 

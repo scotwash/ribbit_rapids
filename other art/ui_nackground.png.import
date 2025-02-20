@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bw8sv5pabfyh2"
-path="res://.godot/imported/BigThreeWaytPipe_Left.png-84457d19ed8476c46be1cf9d778613f4.ctex"
+uid="uid://bcc85nper5vio"
+path="res://.godot/imported/ui_nackground.png-cd7b6ed902a4761e4785dd6c9010a329.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://other art/pipes/BigThreeWaytPipe_Left.png"
-dest_files=["res://.godot/imported/BigThreeWaytPipe_Left.png-84457d19ed8476c46be1cf9d778613f4.ctex"]
+source_file="res://other art/ui_nackground.png"
+dest_files=["res://.godot/imported/ui_nackground.png-cd7b6ed902a4761e4785dd6c9010a329.ctex"]
 
 [params]
 

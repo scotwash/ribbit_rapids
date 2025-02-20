@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m1rk7fgqrh1v"
-path="res://.godot/imported/BigStraightPipe_Horizontal.png-a44c19653ce935d74113dcf88522679f.ctex"
+uid="uid://c55vacjqjevo"
+path="res://.godot/imported/pixel game font 4.jpg-b78a7b0113be862c10f8ed876c86b76b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://other art/pipes/BigStraightPipe_Horizontal.png"
-dest_files=["res://.godot/imported/BigStraightPipe_Horizontal.png-a44c19653ce935d74113dcf88522679f.ctex"]
+source_file="res://fonts/pixel game font 4.jpg"
+dest_files=["res://.godot/imported/pixel game font 4.jpg-b78a7b0113be862c10f8ed876c86b76b.ctex"]
 
 [params]
 

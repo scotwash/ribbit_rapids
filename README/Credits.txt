@@ -1,3 +1,6 @@
 Credits
 Main music
 https://www.youtube.com/watch?v=k0FfHjmoVTE&list=PLH44RMqfEN8uBKmqKdWgGv9mmM-jMgNM3
+
+score font:
+	https://www.1001fonts.com/pixel-game-font.html

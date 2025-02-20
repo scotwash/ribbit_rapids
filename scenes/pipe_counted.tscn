@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=3 uid="uid://w0l2y1s1g4kd"]
+
+[ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://other art/icons/score icons/4WayPipe.png" id="1_x2m04"]
+[ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="2_f5xqw"]
+
+[sub_resource type="GDScript" id="GDScript_6yr2u"]
+script/source = "extends RichTextLabel
+var pipesCollected = 0
+
+	
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	get_node(\"res://scenes/puzzle_scenes/rotating/rotating_puzzle_1.tscn\")
+	pass # Replace with function body.
+
+func pipesCounted():
+	if 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[node name="pipe_counted" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="pipe" type="Sprite2D" parent="."]
+position = Vector2(437, 14)
+texture = ExtResource("1_x2m04")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 8.0
+offset_right = 494.0
+offset_bottom = 48.0
+theme_override_colors/default_color = Color(0, 0.986484, 0.429383, 1)
+theme_override_colors/font_outline_color = Color(0.133649, 1, 0.566577, 1)
+theme_override_colors/font_shadow_color = Color(0.0270416, 0.210731, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_f5xqw")
+text = "0"
+script = SubResource("GDScript_6yr2u")
