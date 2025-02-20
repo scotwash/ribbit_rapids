@@ -1,13 +1,10 @@
-[gd_scene load_steps=11 format=4 uid="uid://b1efm6vp1t4mt"]
+[gd_scene load_steps=8 format=4 uid="uid://b1efm6vp1t4mt"]
 
 [ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="1_nt6lp"]
+[ext_resource type="Script" path="res://scripts/base_puzzle.gd" id="1_xdgee"]
 [ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://other art/pipes/BigStraightPipe_Horizontal.png" id="2_crdjk"]
 [ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/pipes/BigCurvedPipe_BottomRight.png" id="3_d6s67"]
-[ext_resource type="Script" path="res://scripts/rotate.gd" id="4_nsphr"]
-[ext_resource type="Script" path="res://scripts/rotate_2.gd" id="5_l2fpt"]
-[ext_resource type="Script" path="res://scripts/rotate_3.gd" id="6_5xq68"]
-[ext_resource type="Script" path="res://scripts/rotate_4.gd" id="7_51544"]
-[ext_resource type="Script" path="res://scripts/rotate_5.gd" id="8_lh12c"]
+[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="5_jrxvn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4s8d7"]
 texture = ExtResource("1_nt6lp")
@@ -52,6 +49,7 @@ texture = ExtResource("1_nt6lp")
 sources/0 = SubResource("TileSetAtlasSource_4s8d7")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_xdgee")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 position = Vector2(220, 204)
@@ -82,6 +80,7 @@ scale = Vector2(0.205738, 0.321447)
 texture = ExtResource("2_crdjk")
 
 [node name="5" type="Sprite2D" parent="TileMapLayer"]
+unique_name_in_owner = true
 position = Vector2(-25.5771, -8.67907)
 scale = Vector2(0.205738, 0.321447)
 texture = ExtResource("2_crdjk")
@@ -135,13 +134,19 @@ position = Vector2(40.4002, 22.5013)
 scale = Vector2(0.205738, 0.321447)
 texture = ExtResource("2_crdjk")
 
+[node name="hud" parent="TileMapLayer" instance=ExtResource("5_jrxvn")]
+offset_left = -87.4853
+offset_top = 72.0041
+offset_right = -87.4853
+offset_bottom = 72.0041
+scale = Vector2(0.299998, 0.467228)
+
 [node name="Rotate" type="Button" parent="."]
 offset_left = 115.0
 offset_top = 66.0
 offset_right = 123.0
 offset_bottom = 74.0
 scale = Vector2(5.28708, 4.74509)
-script = ExtResource("4_nsphr")
 
 [node name="Rotate2" type="Button" parent="."]
 offset_left = 101.0
@@ -149,7 +154,6 @@ offset_top = 146.0
 offset_right = 109.0
 offset_bottom = 154.0
 scale = Vector2(7.51018, 7.73213)
-script = ExtResource("5_l2fpt")
 
 [node name="Rotate3" type="Button" parent="."]
 offset_left = 171.0
@@ -157,7 +161,6 @@ offset_top = 215.0
 offset_right = 179.0
 offset_bottom = 223.0
 scale = Vector2(5.62191, 4.74017)
-script = ExtResource("6_5xq68")
 
 [node name="Rotate4" type="Button" parent="."]
 offset_left = 274.0
@@ -165,7 +168,6 @@ offset_top = 140.0
 offset_right = 282.0
 offset_bottom = 148.0
 scale = Vector2(7.20486, 5.62325)
-script = ExtResource("7_51544")
 
 [node name="Rotate5" type="Button" parent="."]
 offset_left = 270.0
@@ -173,10 +175,9 @@ offset_top = 246.0
 offset_right = 278.0
 offset_bottom = 254.0
 scale = Vector2(6.53167, 6.00829)
-script = ExtResource("8_lh12c")
 
-[connection signal="pressed" from="Rotate" to="Rotate" method="_on_pressed"]
-[connection signal="pressed" from="Rotate2" to="Rotate2" method="_on_pressed"]
-[connection signal="pressed" from="Rotate3" to="Rotate3" method="_on_pressed"]
-[connection signal="pressed" from="Rotate4" to="Rotate4" method="_on_pressed"]
-[connection signal="pressed" from="Rotate5" to="Rotate5" method="_on_pressed"]
+[connection signal="pressed" from="Rotate" to="." method="_on_rotate_pressed"]
+[connection signal="pressed" from="Rotate2" to="." method="_on_rotate_2_pressed"]
+[connection signal="pressed" from="Rotate3" to="." method="_on_rotate_3_pressed"]
+[connection signal="pressed" from="Rotate4" to="." method="_on_rotate_4_pressed"]
+[connection signal="pressed" from="Rotate5" to="." method="_on_rotate_5_pressed"]

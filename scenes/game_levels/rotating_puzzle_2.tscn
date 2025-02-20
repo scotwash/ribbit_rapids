@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://5v3rlsos2c4i"]
+
+[node name="RotatingPuzzle2" type="Node2D"]
