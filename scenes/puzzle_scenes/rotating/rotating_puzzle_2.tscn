@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=4 uid="uid://5v3rlsos2c4i"]
+[gd_scene load_steps=16 format=4 uid="uid://5v3rlsos2c4i"]
 
 [ext_resource type="Texture2D" uid="uid://bk5r8a43bd32m" path="res://tilesets/IMG_1011.png" id="1_55lni"]
 [ext_resource type="Script" path="res://scripts/rotating_puzzle_2.gd" id="1_nikim"]
@@ -10,6 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dydxh07w2m3fw" path="res://other art/icons/pipes/BigThreeWaytPipe_Bottom.png" id="8_ualok"]
 [ext_resource type="Texture2D" uid="uid://dpxe55ybdt24h" path="res://other art/icons/pipes/BigCurvedPipe_TopRight.png" id="9_grryt"]
 [ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="10_50pxa"]
+[ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="11_f614w"]
+[ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="11_fk2t4"]
+[ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://other art/icons/score icons/4WayPipe.png" id="12_xll8p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_bk8u1"]
 texture = ExtResource("1_55lni")
@@ -215,9 +218,25 @@ offset_top = 472.0
 offset_right = -42.0
 offset_bottom = 472.0
 
-[node name="score" type="RichTextLabel" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(31, 19)
+scale = Vector2(1, 0.64)
+texture = ExtResource("11_fk2t4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visibility_layer = 2
+position = Vector2(20, 20)
+texture = ExtResource("12_xll8p")
+
+[node name="pipe_score_text" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+offset_left = 42.0
+offset_top = 12.0
+offset_right = 82.0
+offset_bottom = 52.0
+theme_override_colors/font_outline_color = Color(0.153695, 0.603571, 0.627999, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.52549, 0, 1)
+theme_override_fonts/normal_font = ExtResource("11_f614w")
 text = "0"
 
 [connection signal="pressed" from="Rotate_3" to="." method="_on_rotate_3_pressed"]

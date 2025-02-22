@@ -14,9 +14,7 @@ func _ready():
 	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-	_winStatement()
-	
+
 
 func increaseScore():
 	%pipe_score_text.text = str(pipesCollected)
@@ -28,7 +26,7 @@ func increaseScore():
 
 func _on_rotate_pressed():
 	%"3".rotate(900)
-	increaseScore()
+	pipesCollected+=1
 	rotate_button1.visible = false
 	%pipe_score_text.text = str(pipesCollected)
 	pass # Replace with function body.
@@ -36,7 +34,8 @@ func _on_rotate_pressed():
 
 func _on_rotate_2_pressed():
 	%"5".rotate(300)
-	increaseScore()
+	pipesCollected+=1
+
 	rotate_button2.visible = false
 	%pipe_score_text.text = str(pipesCollected)
 	pass # Replace with function body.
@@ -44,7 +43,7 @@ func _on_rotate_2_pressed():
 
 func _on_rotate_3_pressed():
 	%"7".rotate(-600)
-	increaseScore()
+	pipesCollected+=1
 	rotate_button3.visible = false
 	%pipe_score_text.text = str(pipesCollected)
 	pass # Replace with function body.
@@ -52,7 +51,7 @@ func _on_rotate_3_pressed():
 
 func _on_rotate_4_pressed():
 	%"10".rotate(-900)
-	increaseScore()
+	pipesCollected+=1
 	rotate_button4.visible = false 
 	%pipe_score_text.text = str(pipesCollected)
 	pass # Replace with function body.
@@ -60,11 +59,7 @@ func _on_rotate_4_pressed():
 
 func _on_rotate_5_pressed():
 	%"12".rotate(-5000)
-	increaseScore()
+	pipesCollected+=1
 	rotate_button5.visible = false
 	%pipe_score_text.text = str(pipesCollected)
 	pass # Replace with function body.
-
-func _winStatement():
-	
-		get_tree().change_scene_to_file("res://scenes/level_select.tscn")
