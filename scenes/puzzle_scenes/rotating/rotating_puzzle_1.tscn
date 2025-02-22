@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=4 uid="uid://b1efm6vp1t4mt"]
+[gd_scene load_steps=11 format=4 uid="uid://b1efm6vp1t4mt"]
 
 [ext_resource type="Script" path="res://scripts/base_puzzle.gd" id="1_kdjqr"]
 [ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="2_hpurg"]
@@ -8,9 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="6_58aar"]
 [ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://other art/icons/score icons/4WayPipe.png" id="7_3kwj2"]
 [ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="8_wsrtx"]
-[ext_resource type="Texture2D" uid="uid://b7pcrvhnunw3o" path="res://other art/icons/level icons/level1.png" id="9_6j60k"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4s8d7"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dprhh"]
 texture = ExtResource("2_hpurg")
 0:0/0 = 0
 1:0/0 = 0
@@ -50,7 +49,7 @@ texture = ExtResource("2_hpurg")
 5:5/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_8eab4"]
-sources/0 = SubResource("TileSetAtlasSource_4s8d7")
+sources/0 = SubResource("TileSetAtlasSource_dprhh")
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource("1_kdjqr")
@@ -139,10 +138,13 @@ scale = Vector2(0.205738, 0.321447)
 texture = ExtResource("3_1cndh")
 
 [node name="hud" parent="TileMapLayer" instance=ExtResource("5_sqhb0")]
+anchors_preset = 10
+anchor_bottom = 0.0
 offset_left = -87.4853
 offset_top = 72.0041
 offset_right = -87.4853
 offset_bottom = 72.0041
+grow_vertical = 1
 scale = Vector2(0.299998, 0.467228)
 
 [node name="Rotate" type="Button" parent="."]
@@ -209,10 +211,6 @@ theme_override_colors/font_outline_color = Color(0.153695, 0.603571, 0.627999, 1
 theme_override_colors/font_shadow_color = Color(0, 0.52549, 0, 1)
 theme_override_fonts/normal_font = ExtResource("8_wsrtx")
 text = "0"
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(34, 32)
-texture = ExtResource("9_6j60k")
 
 [connection signal="hidden" from="Rotate" to="." method="_on_rotate_hidden"]
 [connection signal="pressed" from="Rotate" to="." method="_on_rotate_pressed"]

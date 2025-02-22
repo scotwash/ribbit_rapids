@@ -23,6 +23,7 @@ offset_bottom = 248.0
 icon = ExtResource("2_tqms7")
 
 [node name="Button2" type="Button" parent="."]
+layout_mode = 0
 offset_left = 211.0
 offset_top = 179.0
 offset_right = 283.0
@@ -30,6 +31,7 @@ offset_bottom = 251.0
 icon = ExtResource("3_k5lsw")
 
 [node name="Button3" type="Button" parent="."]
+layout_mode = 0
 offset_left = 428.0
 offset_top = 175.0
 offset_right = 500.0

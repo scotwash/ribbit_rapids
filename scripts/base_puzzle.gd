@@ -68,4 +68,4 @@ func _on_rotate_5_pressed():
 
 func _winStatement():
 	if pipesCollected == 5:
-		get_tree().change_scene_to_file("w")
+		get_tree().change_scene_to_file("res://scenes/level_select.tscn")

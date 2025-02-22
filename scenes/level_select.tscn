@@ -5,7 +5,6 @@
 [ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="2_natnn"]
 
 [node name="worldl_Select" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 223.0
