@@ -19,7 +19,6 @@ func _process(_delta):
 	
 
 func increaseScore():
-	pipesCollected+=1
 	%pipe_score_text.text = str(pipesCollected)
 	
 	
@@ -67,5 +66,5 @@ func _on_rotate_5_pressed():
 	pass # Replace with function body.
 
 func _winStatement():
-	if pipesCollected == 5:
+	
 		get_tree().change_scene_to_file("res://scenes/level_select.tscn")
