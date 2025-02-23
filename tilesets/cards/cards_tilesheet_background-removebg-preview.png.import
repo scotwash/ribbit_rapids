@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vygo75vf8ha"
-path="res://.godot/imported/Frogs_10.png-4a4427573471eab29e4bfb3577eb25b5.ctex"
+uid="uid://b6pajqg8v1g8a"
+path="res://.godot/imported/cards_tilesheet_background-removebg-preview.png-59cc7b8a602066433c4878372988ff32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tilesets/cards/Frogs_10.png"
-dest_files=["res://.godot/imported/Frogs_10.png-4a4427573471eab29e4bfb3577eb25b5.ctex"]
+source_file="res://tilesets/cards/cards_tilesheet_background-removebg-preview.png"
+dest_files=["res://.godot/imported/cards_tilesheet_background-removebg-preview.png-59cc7b8a602066433c4878372988ff32.ctex"]
 
 [params]
 

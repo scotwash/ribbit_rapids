@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://dvj28w4dup5qc"]
+
+[ext_resource type="Script" path="res://scripts/cards.gd" id="1_icage"]
+[ext_resource type="Texture2D" uid="uid://vygo75vf8ha" path="res://tilesets/cards/Frogs_10.png" id="2_l8lsj"]
+
+[node name="memory_game" type="Node2D"]
+position = Vector2(244, 237)
+script = ExtResource("1_icage")
+
+[node name="Frogs10" type="Sprite2D" parent="."]
+position = Vector2(-188, -117)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs11" type="Sprite2D" parent="."]
+position = Vector2(-37, -118)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs12" type="Sprite2D" parent="."]
+position = Vector2(148, -119)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs13" type="Sprite2D" parent="."]
+position = Vector2(-187.5, -6.5)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs14" type="Sprite2D" parent="."]
+position = Vector2(-36.5, -7.5)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs15" type="Sprite2D" parent="."]
+position = Vector2(148.5, -8.5)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs16" type="Sprite2D" parent="."]
+position = Vector2(-184.5, 123.5)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs17" type="Sprite2D" parent="."]
+position = Vector2(-33.5, 122.5)
+texture = ExtResource("2_l8lsj")
+
+[node name="Frogs18" type="Sprite2D" parent="."]
+position = Vector2(151.5, 121.5)
+texture = ExtResource("2_l8lsj")
