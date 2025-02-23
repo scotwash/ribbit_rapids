@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://dygnrsrdc1cd8"]
+[gd_scene load_steps=16 format=4 uid="uid://dygnrsrdc1cd8"]
 
 [ext_resource type="Texture2D" uid="uid://bk5r8a43bd32m" path="res://tilesets/IMG_1011.png" id="1_jq2ye"]
 [ext_resource type="Script" path="res://scripts/rotating_puzzle_3.gd" id="1_limrc"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://dy87r7rdesg7u" path="res://other art/icons/pipes/BigStraightPipe_Vertical.png" id="7_yeejx"]
 [ext_resource type="Texture2D" uid="uid://6dw62000gfym" path="res://other art/icons/pipes/BigFourWayPipe.png" id="8_lvwve"]
 [ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/icons/pipes/BigCurvedPipe_BottomRight.png" id="9_lg2xr"]
+[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="10_5q4ja"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k05su"]
 texture = ExtResource("1_jq2ye")
@@ -65,11 +66,13 @@ scale = Vector2(0.21514, 0.29835)
 texture = ExtResource("3_8fndq")
 
 [node name="pipe2" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-54.3855, -40.3019)
 scale = Vector2(0.246554, 0.280492)
 texture = ExtResource("4_v61kj")
 
 [node name="pipe3" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-56.2188, -22.5418)
 scale = Vector2(0.21514, 0.29835)
 texture = ExtResource("3_8fndq")
@@ -80,6 +83,7 @@ scale = Vector2(0.265752, 0.300111)
 texture = ExtResource("5_njkh5")
 
 [node name="pipe5" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-51.0246, 8.197)
 scale = Vector2(0.27, 0.27)
 texture = ExtResource("6_fumlx")
@@ -90,6 +94,7 @@ scale = Vector2(0.251126, 0.238977)
 texture = ExtResource("7_yeejx")
 
 [node name="pipe7" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-21.6081, -41.9082)
 scale = Vector2(0.27, 0.27)
 texture = ExtResource("6_fumlx")
@@ -105,6 +110,7 @@ scale = Vector2(0.248248, 0.25082)
 texture = ExtResource("9_lg2xr")
 
 [node name="pipe10" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-41.2475, -4.0985)
 scale = Vector2(0.265752, 0.300111)
 texture = ExtResource("5_njkh5")
@@ -115,6 +121,7 @@ scale = Vector2(0.21514, 0.29835)
 texture = ExtResource("3_8fndq")
 
 [node name="pipe12" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-22.3042, 7.85547)
 scale = Vector2(0.251126, 0.238977)
 texture = ExtResource("7_yeejx")
@@ -135,6 +142,7 @@ scale = Vector2(0.251126, 0.238977)
 texture = ExtResource("7_yeejx")
 
 [node name="pipe16" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(-10.6938, -56.6959)
 scale = Vector2(0.248248, 0.25082)
 texture = ExtResource("9_lg2xr")
@@ -149,12 +157,8 @@ position = Vector2(-2.74984, -24.2495)
 scale = Vector2(0.21514, 0.29835)
 texture = ExtResource("3_8fndq")
 
-[node name="pipe24" type="Sprite2D" parent="background"]
-position = Vector2(28.4149, 6.4893)
-scale = Vector2(0.21514, 0.29835)
-texture = ExtResource("3_8fndq")
-
 [node name="pipe19" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(14.3602, -24.2495)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_v61kj")
@@ -175,9 +179,15 @@ scale = Vector2(0.251126, 0.238977)
 texture = ExtResource("7_yeejx")
 
 [node name="pipe23" type="Sprite2D" parent="background"]
+unique_name_in_owner = true
 position = Vector2(15.2768, 9.56317)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("4_v61kj")
+
+[node name="pipe24" type="Sprite2D" parent="background"]
+position = Vector2(28.4149, 6.4893)
+scale = Vector2(0.21514, 0.29835)
+texture = ExtResource("3_8fndq")
 
 [node name="UI_background" type="Sprite2D" parent="."]
 position = Vector2(27, 16)
@@ -199,3 +209,86 @@ theme_override_colors/font_outline_color = Color(0.153695, 0.603571, 0.627999, 1
 theme_override_colors/font_shadow_color = Color(0, 0.52549, 0, 1)
 theme_override_fonts/normal_font = ExtResource("5_tfhvc")
 text = "0"
+
+[node name="Button1" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 51.0
+offset_top = 82.0
+offset_right = 110.0
+offset_bottom = 131.0
+
+[node name="Button2" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 53.0
+offset_top = 140.0
+offset_right = 112.0
+offset_bottom = 189.0
+
+[node name="Button3" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 54.0
+offset_top = 236.0
+offset_right = 113.0
+offset_bottom = 285.0
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 140.0
+offset_top = 86.0
+offset_right = 148.0
+offset_bottom = 94.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button5" type="Button" parent="."]
+offset_left = 92.0
+offset_top = 182.0
+offset_right = 100.0
+offset_bottom = 190.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button6" type="Button" parent="."]
+offset_left = 152.0
+offset_top = 226.0
+offset_right = 160.0
+offset_bottom = 234.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button7" type="Button" parent="."]
+offset_left = 196.0
+offset_top = 45.0
+offset_right = 204.0
+offset_bottom = 53.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button8" type="Button" parent="."]
+offset_left = 264.0
+offset_top = 125.0
+offset_right = 272.0
+offset_bottom = 133.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button9" type="Button" parent="."]
+offset_left = 257.0
+offset_top = 226.0
+offset_right = 265.0
+offset_bottom = 234.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="Button10" type="Button" parent="."]
+offset_left = 154.0
+offset_top = 179.0
+offset_right = 162.0
+offset_bottom = 187.0
+scale = Vector2(10.2479, 7.13492)
+
+[node name="hud" parent="." instance=ExtResource("10_5q4ja")]
+offset_left = -103.0
+offset_top = 408.0
+offset_right = -103.0
+offset_bottom = 408.0
+scale = Vector2(1.10417, 1.09449)
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
