@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://b3fwaqeu88yae"
+path="res://.godot/imported/level3.png-375c142df7992c6bab683e1a037b1109.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/level icons/level3.png"
+dest_files=["res://.godot/imported/level3.png-375c142df7992c6bab683e1a037b1109.ctex"]
 
 [params]
 

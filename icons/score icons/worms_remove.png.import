@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://2dowmwga3ru1"
+path="res://.godot/imported/worms_remove.png-f1a971849b118c69d70b90c767bac19d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/score icons/worms_remove.png"
+dest_files=["res://.godot/imported/worms_remove.png-f1a971849b118c69d70b90c767bac19d.ctex"]
 
 [params]
 

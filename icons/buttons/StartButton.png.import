@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://dibeoce0djpi1"
+path="res://.godot/imported/StartButton.png-19e043eedf18658fc0b1f8d961d2ec76.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/buttons/StartButton.png"
+dest_files=["res://.godot/imported/StartButton.png-19e043eedf18658fc0b1f8d961d2ec76.ctex"]
 
 [params]
 

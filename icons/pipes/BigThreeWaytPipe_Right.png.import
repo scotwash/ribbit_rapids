@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://cab1ugyfgy453"
+path="res://.godot/imported/BigThreeWaytPipe_Right.png-8389d255dc9da9e7d93592d958f5a124.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/pipes/BigThreeWaytPipe_Right.png"
+dest_files=["res://.godot/imported/BigThreeWaytPipe_Right.png-8389d255dc9da9e7d93592d958f5a124.ctex"]
 
 [params]
 

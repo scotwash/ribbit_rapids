@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://bra2oreaeofx2"
+path="res://.godot/imported/BigCurvedPipe_BottomRight.png-253da7da249ea2ea802d975bdc58bbdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/pipes/BigCurvedPipe_BottomRight.png"
+dest_files=["res://.godot/imported/BigCurvedPipe_BottomRight.png-253da7da249ea2ea802d975bdc58bbdb.ctex"]
 
 [params]
 

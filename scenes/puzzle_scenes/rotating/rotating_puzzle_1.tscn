@@ -1,12 +1,12 @@
 [gd_scene load_steps=11 format=4 uid="uid://b1efm6vp1t4mt"]
 
-[ext_resource type="Script" path="res://scripts/base_puzzle.gd" id="1_kdjqr"]
+[ext_resource type="Script" path="res://scripts/puzzles/puzzles/rotating/base_puzzle.gd" id="1_kdjqr"]
 [ext_resource type="Texture2D" uid="uid://ddaast6t2bwc6" path="res://tilesets/grid.jpg" id="2_hpurg"]
-[ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://other art/icons/pipes/BigStraightPipe_Horizontal.png" id="3_1cndh"]
-[ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://other art/icons/pipes/BigCurvedPipe_BottomRight.png" id="4_txrqq"]
-[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="5_sqhb0"]
-[ext_resource type="Texture2D" uid="uid://bcc85nper5vio" path="res://other art/ui_nackground.png" id="6_58aar"]
-[ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://other art/icons/score icons/4WayPipe.png" id="7_3kwj2"]
+[ext_resource type="Texture2D" uid="uid://m1rk7fgqrh1v" path="res://icons/pipes/BigStraightPipe_Horizontal.png" id="3_1cndh"]
+[ext_resource type="Texture2D" uid="uid://bra2oreaeofx2" path="res://icons/pipes/BigCurvedPipe_BottomRight.png" id="4_txrqq"]
+[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/ui/hud.tscn" id="5_sqhb0"]
+[ext_resource type="Texture2D" path="res://other art/ui_nackground.png" id="6_58aar"]
+[ext_resource type="Texture2D" uid="uid://dxblnysj4xes2" path="res://icons/score icons/4WayPipe.png" id="7_3kwj2"]
 [ext_resource type="FontFile" uid="uid://clfs2q4rdevbr" path="res://fonts/Pixel Game.otf" id="8_wsrtx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dprhh"]

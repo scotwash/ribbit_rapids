@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://cki630y1fc16k"
+path="res://.godot/imported/Final Maze.png-e7f0be0472d5004557817d9465023f4b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://maze_sprites/Final Maze.png"
+dest_files=["res://.godot/imported/Final Maze.png-e7f0be0472d5004557817d9465023f4b.ctex"]
 
 [params]
 

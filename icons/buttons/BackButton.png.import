@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7nkykrcjelc5"
-path="res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"
+uid="uid://cqluiq7u4eo1u"
+path="res://.godot/imported/BackButton.png-21b44d5d4f3b36cf5c8008b941ebcd4c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://backgrounds/Ribbit_Rapids_Title_Screen.png"
-dest_files=["res://.godot/imported/Ribbit_Rapids_Title_Screen.png-7bedf44bd221e5e4d3d205325c9ce0ee.ctex"]
+source_file="res://icons/buttons/BackButton.png"
+dest_files=["res://.godot/imported/BackButton.png-21b44d5d4f3b36cf5c8008b941ebcd4c.ctex"]
 
 [params]
 
