@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cch4tlbq0ejiu" path="res://tilesets/IMG_1014.png" id="6_ow82h"]
 [ext_resource type="Texture2D" uid="uid://djuo5ypiwxll1" path="res://tilesets/IMG_1015.png" id="7_pqqk1"]
 [ext_resource type="PackedScene" uid="uid://c6g4j7dc84xwu" path="res://scenes/worm.tscn" id="8_ksxd6"]
-[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/hud.tscn" id="8_rvxd1"]
+[ext_resource type="PackedScene" uid="uid://bvw5k881cj5kf" path="res://scenes/ui/hud.tscn" id="8_rvxd1"]
 
 [sub_resource type="GDScript" id="GDScript_ub2a3"]
 
