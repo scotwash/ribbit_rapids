@@ -16,7 +16,7 @@ func _on_load_pressed():
 
 
 func _on_menu_pressed():
-	get_tree().change_scene_to_file("res://scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://scenes/ui/menu.tscn")
 	pass # Replace with function body.
 	
 	
